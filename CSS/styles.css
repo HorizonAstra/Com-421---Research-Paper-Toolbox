@@ -118,11 +118,14 @@ nav {
     border-left: 4px solid #FFD700;
     padding-left: 15px;
     transition: background-color 0.3s ease;
-}
+} 
 
+/*
 .intro p:hover {
     background-color: rgba(255, 215, 0, 0.1);
 }
+*/
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -167,46 +170,40 @@ h1, h2, h3, h4 {
     color: #FFD700; /* Gold color for all headings */
 }
 
-/* Sidebar Styles */
+/* Sidebar styling */
 .sidebar {
-    background-color: #222; /* Keep background consistent with the dark theme */
+    background-color: #333; /* Slightly lighter theme */
+    color: #ccc; /* Light gray text for readability */
     padding: 15px;
     margin: 20px 0;
-    border-left: 4px solid #FFD700; /* Gold accent border */
-    font-size: 0.9em;
-    color: #ccc; /* Light gray for sidebar text */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #FFD700; /* Gold accent */
     border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Adjust for responsive fit */
 }
 
-/* Accordion Styles */
-.accordion {
-    background-color: #FFD700; /* Gold background for accordion button */
-    color: #222; /* Dark text color for contrast */
-    cursor: pointer;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-}
-
-.accordion:hover {
-    background-color: #333; /* Dark gray hover effect */
-    color: #FFD700; /* Change text to gold on hover */
-}
-
-.accordion-content {
-    background-color: #111; /* Slightly darker background for accordion content */
-    color: #ccc; /* Light gray for content inside accordion */
-    display: none;
-    padding: 0 18px;
-    overflow: hidden;
-    border-left: 5px solid #FFD700; /* Gold border for emphasis */
-    border-radius: 0 0 8px 8px;
+/* Sidebar heading */
+.sidebar h4 {
+    color: #FFD700; /* Gold color for heading */
+    font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+/* Bullet points styling within the sidebar */
+.sidebar ul {
+    padding-left: 20px; /* Indents bullets slightly */
+    margin-top: -10px; /* Reduces space after paragraphs */
+}
+
+.sidebar ul li {
+    margin-bottom: 8px; /* Adds space between each bullet */
+    line-height: 1.5; /* Improves readability */
+}
+
+/* Optional: custom bullet style */
+.sidebar ul li::marker {
+    color: #FFD700; /* Gold bullet color for emphasis */
+    font-size: 1.1em;
 }
 
 /* Images */
@@ -285,7 +282,8 @@ strong {
 /* Paragraph Styling */
 .content-section p {
     color: #ccc; /* Light gray for general text */
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
     line-height: 1.8;
 }
 
@@ -316,4 +314,69 @@ strong {
 .sub-list li:hover {
     background-color: rgba(255, 215, 0, 0.1); /* Light gold highlight on hover */
     border-left: 3px solid #FFD700; /* Emphasize left border on hover */
+}
+
+/* Callout Box for Important Notes */
+.callout {
+    background-color: #333;
+    color: #eee;
+    padding: 10px;
+    margin: 20px 0;
+    border-left: 5px solid #FFD700;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Steps List Styling */
+.steps {
+    list-style: decimal inside;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.steps li {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* Database List Styling */
+.database-list {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #eee;
+}
+
+strong {
+    display: block;
+    margin-bottom: 5px; /* Adjust this value as needed */
+}
+
+strong {
+    display: inline; /* Inline with following text */
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style links within the content-section to match paragraph text */
+.content-section a {
+    color: inherit; /* Inherits the color from the surrounding text */
+    text-decoration: none; /* Removes the underline */
+}
+
+.content-section a:hover {
+    text-decoration: underline; /* Optional: underline on hover for clarity */
+}
+
+.objective-list {
+    list-style-type: disc; /* Standard bullet points */
+    margin-top: 15px; /* Add space above the list */
+    padding-left: 350px; /* Space from the right edge */
+    text-align: left; /* Align text to the left */
+}
+
+.objective-list li {
+    margin-bottom: 10px;
 }
