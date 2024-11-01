@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    <header role="banner">
+    <header>
         <nav aria-label="Main navigation">
             <div class="brand">
                 <h1>Research Paper Toolbox</h1>
@@ -19,7 +19,7 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-            <ul class="menu" id="menu" role="navigation">
+            <ul class="menu" id="menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="placeholder.html">Topic</a></li>
                 <li><a href="research.html">Research</a></li>
@@ -46,7 +46,6 @@
     </section>
     
     <main>
-
         <!-- Content Areas Section -->
         <section class="content-section">
             <h2>Content Areas</h2>
@@ -56,7 +55,7 @@
             <ul class="content-list">
                 <li>
                     <div class="content-item">
-                        <strong>Formatting Data for Analysis</strong>
+                        <span class="emphasis">Formatting Data for Analysis</span>
                         <ul class="sub-list">
                             <li><a href="#open-dataset">Opening the Dataset in Excel</a></li>
                             <li><a href="#rename-columns">Renaming Variables for Clarity</a></li>
@@ -67,7 +66,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Organizing Data</strong>
+                        <span class="emphasis">Organizing Data</span>
                         <ul class="sub-list">
                             <li><a href="#input-conventions">Establishing Input Conventions</a></li>
                             <li><a href="#separate-data">Separating Data into Components</a></li>
@@ -78,7 +77,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Running Descriptive Statistics</strong>
+                        <span class="emphasis">Running Descriptive Statistics</span>
                         <ul class="sub-list">
                             <li><a href="#prepare-summary">Preparing Data for Summary Statistics</a></li>
                             <li><a href="#run-toolpak">Using Analysis ToolPak for Descriptive Statistics</a></li>
@@ -89,7 +88,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Running Inferential Statistics</strong>
+                        <span class="emphasis">Running Inferential Statistics</span>
                         <ul class="sub-list">
                             <li><a href="#open-pasw">Opening and Uploading Data in PASW</a></li>
                             <li><a href="#choose-statistic">Choosing the Correct Statistic</a></li>
@@ -101,10 +100,8 @@
             
             <p>After you read through the sections above, you’ll be prepared to test your understanding with a short quiz on data analysis techniques.</p>
         </section>
-
-
-
-        <section class="content-section">
+    
+        <div class="content-section">
             <!-- Sidebar for Requirements -->
             <aside class="sidebar">
                 <h4>Requirements</h4>
@@ -120,25 +117,22 @@
                     <li>Research design and how to identify independent variables and dependent variables</li>
                 </ul>
             </aside>
-
-        </section>
-        
-    </main>
+        </div>
     
-
+    
         <!-- Formatting Data for Analysis Section -->
         <section class="content-section">
             <h2 id="open-dataset">Format Data for Analysis</h2>
-            <p>Make sure the computer you are working on has Microsoft Excel installed. Open the document <strong>ToolBox_DataLesson.xls</strong> 
+            <p>Make sure the computer you are working on has Microsoft Excel installed. Open the document <span class="emphasis">ToolBox_DataLesson.xls</span> 
             <span class="note">[[[NOTE: NEED LINK TO DOWNLOAD TUTORIAL EXCEL FILE]]]</span> in Excel and follow along with the lesson, taking action as instructed.</p>
             
             <!-- Step-by-Step Instructions -->
             <ol class="steps">
-                <li id = "rename-columns">In the <strong>Raw_Dataset</strong> spreadsheet, the name of each variable has been entered in the first row of each column.</li>
+                <li id="rename-columns">In the <span class="emphasis">Raw_Dataset</span> spreadsheet, the name of each variable has been entered in the first row of each column.</li>
                 <li>Each variable name must be different from other variable names.</li>
                 <li>The first variable (in column A) is a unique identifier.</li>
-                <li>Variable names must start with a letter (not numbers or special characters), so change <strong>4tutorial_types</strong> to <strong>tutorial_types</strong>.</li>
-                <li>Name variables so that they are intuitive to you. Therefore, change <strong>use</strong> and <strong>useful</strong> to <strong>perc_ease_of_use</strong> and <strong>perc_usefulness</strong>, respectively.</li>
+                <li>Variable names must start with a letter (not numbers or special characters), so change <span class="emphasis">4tutorial_types</span> to <span class="emphasis">tutorial_types</span>.</li>
+                <li>Name variables so that they are intuitive to you. Therefore, change <span class="emphasis">use</span> and <span class="emphasis">useful</span> to <span class="emphasis">perc_ease_of_use</span> and <span class="emphasis">perc_usefulness</span>, respectively.</li>
             </ol>
             <p>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to Perceived Usefulness and Column G refers to Perceived Ease of Use.</p>
 
@@ -151,11 +145,11 @@
             <!-- Data Entry Guidelines -->
             <p>Data values, or rows, have been input for each subject in the experiment.</p>
             <ol class="steps" start="7">
-                <li id="input-conventions">Decide on input conventions and stick to them. In gender, change the "female" value to "F".</li>
-                <li id="separate-data">Separate data into component values whenever possible by adding new columns. For example, <strong>tasks_completed</strong> values (Y/Y/N) can be broken up into three components. So, add columns <strong>task1</strong>, <strong>task2</strong>, and <strong>task3</strong>, and reformat values appropriately.</li>
-                <li id="check-data-errors">Double-check to ensure no data entry errors have been made, then delete the old <strong>tasks_completed</strong> column.</li>
+                <li id="input-conventions">Decide on input conventions and stick to them. In gender, change the <span class="emphasis">female</span> value to <span class="emphasis">F</span>.</li>
+                <li id="separate-data">Separate data into component values whenever possible by adding new columns. For example, <span class="emphasis">tasks_completed</span> values (Y/Y/N) can be broken up into three components. So, add columns <span class="emphasis">task1</span>, <span class="emphasis">task2</span>, and <span class="emphasis">task3</span>, and reformat values appropriately.</li>
+                <li id="check-data-errors">Double-check to ensure no data entry errors have been made, then delete the old <span class="emphasis">tasks_completed</span> column.</li>
             </ol>
-            <p>Your <strong>Raw_Dataset</strong> spreadsheet should now look like Figure 2.</p>
+            <p>Your <span class="emphasis">Raw_Dataset</span> spreadsheet should now look like Figure 2.</p>
 
             <!-- Image Figure 2 -->
             <figure>
@@ -173,13 +167,13 @@
             </aside>
 
             <!-- Further Formatting Instructions -->
-            <p>Copy the <strong>Raw_Dataset</strong> values into the <strong>Sheet2</strong> tab. Rename this sheet <strong>Formatted_Data</strong>.</p>
+            <p>Copy the <span class="emphasis">Raw_Dataset</span> values into the <span class="emphasis">Sheet2</span> tab. Rename this sheet <span class="emphasis">Formatted_Data</span>.</p>
             <ol class="steps" start="10">
-                <li>In the <strong>Formatted_Data</strong> sheet, add new columns with <strong>Insert &gt; Columns</strong> for each distinct value in categorical data columns (<strong>tutorial_types</strong>, <strong>gender</strong>, <strong>exp_level</strong>, <strong>task1</strong>, <strong>task2</strong>, and <strong>task3</strong>).</li>
+                <li>In the <span class="emphasis">Formatted_Data</span> sheet, add new columns with <span class="emphasis">Insert &gt; Columns</span> for each distinct value in categorical data columns (<span class="emphasis">tutorial_types</span>, <span class="emphasis">gender</span>, <span class="emphasis">exp_level</span>, <span class="emphasis">task1</span>, <span class="emphasis">task2</span>, and <span class="emphasis">task3</span>).</li>
                 <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
-                <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <strong>Edit &gt; Replace</strong>.</li>
+                <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <span class="emphasis">Edit &gt; Replace</span>.</li>
             </ol>
-            <p>Your <strong>Formatted_Data</strong> spreadsheet should now look like Figure 3.</p>
+            <p>Your <span class="emphasis">Formatted_Data</span> spreadsheet should now look like Figure 3.</p>
 
             <!-- Image Figure 3 -->
             <figure>
@@ -195,31 +189,29 @@
             <!-- Sidebar for Additional Insight -->
             <aside class="sidebar">
                 <h4>Analyzing Descriptive Statistics</h4>
-                <p>Analyzing descriptive statistics may lead you to ask new questions. For example, <strong>perc_enjoy</strong> is much higher on average than <strong>perc_usefulness</strong>, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.</p>
+                <p>Analyzing descriptive statistics may lead you to ask new questions. For example, <span class="emphasis">perc_enjoy</span> is much higher on average than <span class="emphasis">perc_usefulness</span>, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.</p>
             </aside>
             
             <!-- Introduction and Instructions -->
-            <p id="prepare-summary">Run descriptive (summary) statistics on the dataset and output the results in a new spreadsheet. If necessary, rearrange columns so that data requiring summary, such as continuous values, are adjacent. (In the spreadsheet, the continuous values of perc_enjoy, perc_usefulness, and perc_ease_of_use are already adjacent.)</p>
-            <p>Write down the "input range" (e.g., <strong>H2:J26</strong>) of the data requiring summary, making sure not to include variable labels.<p>
+            <p id="prepare-summary">Run descriptive (summary) statistics on the dataset and output the results in a new spreadsheet. If necessary, rearrange columns so that data requiring summary, such as continuous values, are adjacent. (In the spreadsheet, the continuous values of <span class="emphasis">perc_enjoy</span>, <span class="emphasis">perc_usefulness</span>, and <span class="emphasis">perc_ease_of_use</span> are already adjacent.)</p>
+            <p>Write down the "input range" (e.g., <span class="emphasis">H2:J26</span>) of the data requiring summary, making sure not to include variable labels.</p>
             
             <!-- Step-by-Step Instructions -->
             <ol class="steps">
-                <li id="run-toolpak">Go to <strong>Tools > Add-Ins...</strong> and ensure that the <strong>Analysis ToolPak</strong> is checked. Click <strong>OK</strong>.</li>
-                <li>Navigate to <strong>Tools > Data Analysis</strong> and select <strong>Descriptive Statistics</strong>. Click <strong>OK</strong>.</li>
-                <li>Enter the input range in the designated field and check <strong>Summary Statistics</strong>. Click <strong>OK</strong>.</li>
+                <li id="run-toolpak">Go to <span class="emphasis">Tools &gt; Add-Ins...</span> and ensure that the <span class="emphasis">Analysis ToolPak</span> is checked. Click <span class="emphasis">OK</span>.</li>
+                <li>Navigate to <span class="emphasis">Tools &gt; Data Analysis</span> and select <span class="emphasis">Descriptive Statistics</span>. Click <span class="emphasis">OK</span>.</li>
+                <li>Enter the input range in the designated field and check <span class="emphasis">Summary Statistics</span>. Click <span class="emphasis">OK</span>.</li>
             </ol>
 
-            <p id="analyze-results">The descriptive statistics summary will appear in a new sheet. Rename this sheet to <strong>Descriptive_Stats</strong> and label the output columns according to their respective variables. For instance, Column 1 should be <strong>perc_enjoy</strong>.</p>
+            <p id="analyze-results">The descriptive statistics summary will appear in a new sheet. Rename this sheet to <span class="emphasis">Descriptive_Stats</span> and label the output columns according to their respective variables. For instance, Column 1 should be <span class="emphasis">perc_enjoy</span>.</p>
 
-            <p>Your <strong>Descriptive_Stats</strong> spreadsheet should now resemble Figure 4. Analyzing descriptive statistics is an effective way to begin appraising a dataset before running inferential statistics. Consider what insights the summary statistics for <strong>perc_usefulness</strong> and <strong>perc_ease_of_use</strong> may reveal about the dataset.</p>
+            <p>Your <span class="emphasis">Descriptive_Stats</span> spreadsheet should now resemble Figure 4. Analyzing descriptive statistics is an effective way to begin appraising a dataset before running inferential statistics. Consider what insights the summary statistics for <span class="emphasis">perc_usefulness</span> and <span class="emphasis">perc_ease_of_use</span> may reveal about the dataset.</p>
 
             <!-- Image for Figure 4 -->
             <figure>
                 <img src="../images/datalesson_fig4.png" alt="Example of descriptive statistics output in Excel">
                 <figcaption>Figure 4: Excel requires numeric values for descriptive statistics, so variable labels must be re-entered.</figcaption>
             </figure>
-
-            
         </section>
 
 
@@ -229,14 +221,14 @@
             <p>Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download a 30-day free trial.)</p>
             
             <ol class="steps">
-                <li>When PASW starts, it will prompt you for a data source. Select <strong>Open an existing data source &gt; More Files...</strong></li>
+                <li>When PASW starts, it will prompt you for a data source. Select <span class="emphasis">Open an existing data source &gt; More Files...</span></li>
                 <li>Set the file type to Excel, then find and open the file.</li>
-                <li>From the list, select the <strong>Formatted_Data</strong> worksheet. Click OK. You should now see the dataset.</li>
+                <li>From the list, select the <span class="emphasis">Formatted_Data</span> worksheet. Click OK. You should now see the dataset.</li>
             </ol>
 
-            <p>The most commonly used statistical methods and tests are found under the <strong>Analyze</strong> menu in the standard toolbar.</p>
+            <p>The most commonly used statistical methods and tests are found under the <span class="emphasis">Analyze</span> menu in the standard toolbar.</p>
 
-            <p>Figure 5 shows where to find some common statistical methods and tests. Under PASW's <strong>Analyze</strong> menu, see if you can also find the following:</p>
+            <p>Figure 5 shows where to find some common statistical methods and tests. Under PASW's <span class="emphasis">Analyze</span> menu, see if you can also find the following:</p>
             <ol class="content-list">
                 <li>Wilcoxon-Mann-Whitney test</li>
                 <li>Simple linear regression</li>
@@ -249,7 +241,7 @@
                 <figcaption>CAPTION: Don't assume PASW doesn't run a given test. Many are located under broader statistical classifications.</figcaption>
             </figure>
 
-            <p>Use your prior knowledge or the <strong>Choosing the Correct Statistic</strong> resource to determine which statistic to run to find whether there is a significant difference in perc_usefulness between free_play and other tutorial types.</p>
+            <p>Use your prior knowledge or the <span class="emphasis">Choosing the Correct Statistic</span> resource to determine which statistic to run to find whether there is a significant difference in <span class="emphasis">perc_usefulness</span> between <span class="emphasis">free_play</span> and other tutorial types.</p>
 
             <!-- Sidebar Position -->
             <aside class="sidebar">
@@ -257,21 +249,21 @@
                 <p>Consult UCLA's Choosing the Correct Statistic to ensure the statistical analysis is appropriate for your research question(s), variables of interest, and associated data types.</p>
             </aside>
 
-            <p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to <strong>Analyze &gt; Nonparametric Tests &gt; K Independent Samples...</strong> A new window will open prompting you to select the variables (by column name) to be tested.</p>
+            <p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to <span class="emphasis">Analyze &gt; Nonparametric Tests &gt; K Independent Samples...</span> A new window will open prompting you to select the variables (by column name) to be tested.</p>
 
             <ol class="steps">
-                <li>Select the <strong>perc_usefulness</strong> variable from the scrollable list on the left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable).</li>
-                <li>Select the <strong>free_play</strong> variable from the scrollable list, and click the bottom arrow to move it to the Grouping Variable section (i.e. independent variable).</li>
-                <li>Click <strong>Define Range...</strong>, and enter "0" in the Minimum field and "1" in the Maximum field. This specifies the two categorical variables to be tested. Your screen should now look like Figure 6. Click Continue.</li>
+                <li>Select the <span class="emphasis">perc_usefulness</span> variable from the scrollable list on the left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable).</li>
+                <li>Select the <span class="emphasis">free_play</span> variable from the scrollable list, and click the bottom arrow to move it to the Grouping Variable section (i.e. independent variable).</li>
+                <li>Click <span class="emphasis">Define Range...</span>, and enter "0" in the Minimum field and "1" in the Maximum field. This specifies the two categorical variables to be tested. Your screen should now look like Figure 6. Click Continue.</li>
             </ol>
 
             <!-- Placeholder for Figure 6 -->
             <figure>
                 <img src="../images/datalesson_fig6.png" alt="PASW Kruskal-Wallis Test Variable Selection">
-                <figcaption>CAPTION: For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) are selected.</figcaption>
+                <figcaption>CAPTION: For Kruskal-Wallis, an independent (<span class="emphasis">free_play</span>) and a dependent variable (<span class="emphasis">perc_usefulness</span>) are selected.</figcaption>
             </figure>
 
-            <p id="export-results">Click OK to display the statistical analysis results to a new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <strong>File &gt; Export</strong>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
+            <p id="export-results">Click OK to display the statistical analysis results in a new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <span class="emphasis">File &gt; Export</span>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
 
             <!-- Placeholder for Figure 7 -->
             <figure>
@@ -280,15 +272,14 @@
             </figure>
         </section>
 
-
         <!-- Conclusion Section -->
         <section class="content-section">
             <h2>Conclusion</h2>
-            <p>Now that you've finished the lesson, please complete a <strong>short quiz</strong> to test your understanding of formatting research datasets for comprehensive statistical analysis.</p>
+            <p>Now that you've finished the lesson, please complete a <span class="emphasis">short quiz</span> to test your understanding of formatting research datasets for comprehensive statistical analysis.</p>
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <p>&copy; 2024 Research Paper Toolbox. All rights reserved.</p>
     </footer>
 </body>

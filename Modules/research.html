@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    <header role="banner">
+    <header>
         <nav aria-label="Main navigation">
             <div class="brand">
                 <h1>Research Paper Toolbox</h1>
             </div>
-            <div class="menu-toggle" id="menu-toggle" aria-label="Menu Toggle" role="button" tabindex="0">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="menu" id="menu" role="navigation">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu Toggle" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="menu" id="menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="placeholder.html">Topic</a></li>
                 <li><a href="research.html">Research</a></li>
@@ -50,7 +50,7 @@
             <ul class="content-list">
                 <li>
                     <div class="content-item">
-                        <strong>Getting Started</strong>
+                        <span class="emphasis">Getting Started</span>
                         <ul class="sub-list">
                             <li><a href="#access-library">Learn how to access IIT library services</a></li>
                             <li><a href="#library-website">Learn basic functionality on the IIT library website</a></li>
@@ -60,7 +60,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Research Timelines</strong>
+                        <span class="emphasis">Research Timelines</span>
                         <ul class="sub-list">
                             <li><a href="#formulate-timeline">Learn how to formulate a timeline</a></li>
                             <li><a href="#use-timeline">Learn how to use your timeline to determine the best way to obtain resources</a></li>
@@ -70,7 +70,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Requesting Resources</strong>
+                        <span class="emphasis">Requesting Resources</span>
                         <ul class="sub-list">
                             <li><a href="#request-articles">Learn how to request articles from other libraries</a></li>
                             <li><a href="#request-books">Learn how to request books from other libraries</a></li>
@@ -80,7 +80,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Local Libraries</strong>
+                        <span class="emphasis">Local Libraries</span>
                         <ul class="sub-list">
                             <li><a href="#access-local-libraries">Learn how to access local libraries</a></li>
                             <li><a href="#when-to-use-local">Learn when to utilize local libraries over interlibrary loan</a></li>
@@ -90,7 +90,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <strong>Finding Resources on the Web</strong>
+                        <span class="emphasis">Finding Resources on the Web</span>
                         <ul class="sub-list">
                             <li><a href="#web-resources">Review web-based research tools and their uses</a></li>
                         </ul>
@@ -110,17 +110,17 @@
             <p>If you are a newly admitted student and have not yet obtained an IIT Hawk Card, details for doing so can be found at the <a href="https://www.iit.edu/hawkcard" target="_blank">Hawk Card Homepage</a>. Your Hawk Card number is required for accessing certain library services.</p>
             
             <!-- Callout for Important Note -->
-            <aside class="callout">
-                <p><strong>Note:</strong> Even if you don’t have a Hawk Card, you can still access online journals and perform all search functions through the library website. You will only need your Hawk Card to check out materials in person at the Galvin Library or request materials through interlibrary loan.</p>
-            </aside>
-        
+            <div class="callout">
+                <p><span class="emphasis">Note:</span> Even if you don’t have a Hawk Card, you can still access online journals and perform all search functions through the library website. You will only need your Hawk Card to check out materials in person at the Galvin Library or request materials through interlibrary loan.</p>
+            </div>
+
             <!-- Using myIIT to Access Library Website Section -->
             <h3 id="library-website">2. Using myIIT to Access the Library Website</h3>
-            <p>The recommended way to access the library website is by first logging into <strong>myIIT</strong>. Here’s how:</p>
+            <p>The recommended way to access the library website is by first logging into <span class="emphasis">myIIT</span>. Here’s how:</p>
             
             <ol class="steps">
                 <li>Log in to your <a href="https://my.iit.edu" target="_blank">myIIT</a> account.</li>
-                <li>Once logged in, look for the link to <strong>Library Resources</strong>.</li>
+                <li>Once logged in, look for the link to <span class="emphasis">Library Resources</span>.</li>
                 <li>Click on the Library Resources link to be redirected to the library search website.</li>
             </ol>
             
@@ -131,18 +131,19 @@
             </figure>
             
             <!-- Proxy Server Connection Note -->
-            <aside class="callout">
-                <p><strong>Tip:</strong> Accessing the library website through myIIT provides a proxy server connection, enabling you to access most resources without needing to re-enter your login information.</p>
-            </aside>
+            <div class="callout">
+                <p><span class="emphasis">Tip:</span> Accessing the library website through myIIT provides a proxy server connection, enabling you to access most resources without needing to re-enter your login information.</p>
+            </div>
             
             <!-- Library Navigation and Databases Section -->
             <h3>3. Navigating the Library Website and Using Scholarly Databases</h3>
             <p>After reaching the library website, you’ll find several search options available on the left-hand navigation bar. The best place to start your research is with a scholarly database that allows you to search multiple journals at once, such as:</p>
             
             <ul class="database-list">
-                <li><strong>Academic Search Premiere (EBSCO)</strong> – a robust database for finding peer-reviewed articles.</li>
+                <li><span class="emphasis">Academic Search Premiere (EBSCO)</span> – a robust database for finding peer-reviewed articles.</li>
             </ul>
         </section>
+
 
         <!-- Research Timelines Section -->
         <section class="content-section">
@@ -158,17 +159,17 @@
             
             <p>Let’s unpack some of those terms:</p>
             <ul class="content-list">
-                <li><strong>Time to obtain resource:</strong> How long will it take for the resource to arrive via interlibrary loan? Or, how long will it take for you to physically obtain the resource?</li>
-                <li><strong>Time to read resource:</strong> How long will it take you to read the book or article? Are you at a point in your project where you must begin to write if you want to finish on time?</li>
-                <li><strong>Time to integrate resource into your project:</strong> Even if you are able to read the resource, do you have enough time to identify pertinent information and incorporate that information into your project? If your paper is already written, do you have enough time to restructure it to allow for discussion of this resource?</li>
-                <li><strong>Remaining time before deadline:</strong> How much time is left before you must turn in your project? If the resource is powerful enough to cause you to rethink your approach to your topic, requesting an extension might be necessary.</li>
+                <li><span class="emphasis">Time to obtain resource:</span> How long will it take for the resource to arrive via interlibrary loan? Or, how long will it take for you to physically obtain the resource?</li>
+                <li><span class="emphasis">Time to read resource:</span> How long will it take you to read the book or article? Are you at a point in your project where you must begin to write if you want to finish on time?</li>
+                <li><span class="emphasis">Time to integrate resource into your project:</span> Even if you are able to read the resource, do you have enough time to identify pertinent information and incorporate that information into your project? If your paper is already written, do you have enough time to restructure it to allow for discussion of this resource?</li>
+                <li><span class="emphasis">Remaining time before deadline:</span> How much time is left before you must turn in your project? If the resource is powerful enough to cause you to rethink your approach to your topic, requesting an extension might be necessary.</li>
             </ul>
             
             <!-- Sidebar Note for Realism -->
-            <aside class="sidebar">
+            <div class="sidebar">
                 <h4>Being Realistic</h4>
                 <p>Don’t assume that you can read an entire scholarly book in one day. It’s better to set realistic goals and avoid wasting precious time on resources you can’t fully utilize.</p>
-            </aside>
+            </div>
             
             <!-- Case Study Section -->
             <h3>Case Study: Example of a Research Timeline</h3>
@@ -183,11 +184,12 @@
             <p>Even if you can obtain a resource, it’s essential to decide whether it’s worth the time. Preview resources through reviews or Google Books to ensure they’re valuable. If a resource fits within your timeline, consider these options:</p>
             
             <ul class="content-list">
-                <li><strong>The stated turnaround time:</strong> Consider whether you’d still have time to use the resource if it took twice the estimated time to arrive.</li>
-                <li><strong>The proximity of the lending library:</strong> If you’re using WorldCat, your lending library could be far away, so delivery may take time. Always check the library’s location before requesting materials.</li>
-                <li><strong>The possibility of delay:</strong> If the resource might not arrive in time, it’s better to select another topic or source that’s more accessible.</li>
+                <li><span class="emphasis">The stated turnaround time:</span> Consider whether you’d still have time to use the resource if it took twice the estimated time to arrive.</li>
+                <li><span class="emphasis">The proximity of the lending library:</span> If you’re using WorldCat, your lending library could be far away, so delivery may take time. Always check the library’s location before requesting materials.</li>
+                <li><span class="emphasis">The possibility of delay:</span> If the resource might not arrive in time, it’s better to select another topic or source that’s more accessible.</li>
             </ul>
         </section>
+
 
         <!-- Requesting Resources Section -->
         <section class="content-section">
@@ -203,7 +205,7 @@
                 <figcaption>Example of a research article request. Caption not available.</figcaption>
             </figure>
             
-            <p>Clicking on the <strong>Get Article</strong> link will direct you to a page like this, where you will either be able to retrieve the article through another website or where you will request the article through your <strong>myILL account</strong>.</p>
+            <p>Clicking on the <span class="emphasis">Get Article</span> link will direct you to a page like this, where you will either be able to retrieve the article through another website or where you will request the article through your <span class="emphasis">myILL account</span>.</p>
             
             <!-- Second Image Placeholder -->
             <figure>
@@ -213,20 +215,20 @@
             
             <p>Your myILL account requires a separate setup from your myIIT account, so you will need to register before you are able to request an article. Think of myILL as asking a friend to make a copy of an article for you. You will be notified by email when your article is ready to download, and you can log into myILL and view your page of delivered items.</p>
             
-            <p>For more help requesting articles, see the <strong>Library FAQ and How-to Pages</strong>.</p>
+            <p>For more help requesting articles, see the <span class="emphasis">Library FAQ and How-to Pages</span>.</p>
 
             <!-- Requesting a Book From Another Library Subsection -->
             <h3 id="request-books">2. Requesting a Book from Another Library</h3>
-            <p>When searching for a book, it is best to begin by searching the IIT library system. If you are unsuccessful in finding the title you are looking for, next try to locate the book in <strong>I-Share</strong>. If I-Share yields no results, the next step is to search for your book in <strong>WorldCat</strong>.</p>
+            <p>When searching for a book, it is best to begin by searching the IIT library system. If you are unsuccessful in finding the title you are looking for, next try to locate the book in <span class="emphasis">I-Share</span>. If I-Share yields no results, the next step is to search for your book in <span class="emphasis">WorldCat</span>.</p>
             
             <!-- Sidebar for Important Tip on Realistic Planning -->
-            <aside class="sidebar">
+            <div class="sidebar">
                 <h4>Being Realistic</h4>
                 <p>When collecting resources, don’t assume that you will remember any of the titles you look up or that you will be able to find them again using past searches. Keep a list of resources on Google Documents or on your flash drive.</p>
-            </aside>
+            </div>
 
             <!-- Reminder for Further Assistance -->
-            <p>If you are confused when using any of the library systems, refer back to the <strong>Library FAQ and How-to Pages</strong>, which have tutorials explaining the step-by-step instructions for requesting resources.</p>
+            <p>If you are confused when using any of the library systems, refer back to the <span class="emphasis">Library FAQ and How-to Pages</span>, which have tutorials explaining the step-by-step instructions for requesting resources.</p>
 
             <!-- Case Study Section -->
             <h3>Case Study: Searching and Requesting Resources</h3>
@@ -248,16 +250,16 @@
             
             <p>If you plan to visit an I-Share library to obtain a resource, consider the following:</p>
             <ul>
-                <li><strong>Where is the library located?</strong> Will you need to travel outside of Chicago? If so, consider using interlibrary loan.</li>
-                <li><strong>Can you enter the library?</strong> Although you’re a student at an I-Share institution, different libraries have varying rules for who can browse book stacks.</li>
-                <li><strong>What are the library hours?</strong> Not every institution uses the semester system. For instance, DePaul University uses the quarter system, so check their website to verify library hours.</li>
+                <li><span class="emphasis">Where is the library located?</span> Will you need to travel outside of Chicago? If so, consider using interlibrary loan.</li>
+                <li><span class="emphasis">Can you enter the library?</span> Although you’re a student at an I-Share institution, different libraries have varying rules for who can browse book stacks.</li>
+                <li><span class="emphasis">What are the library hours?</span> Not every institution uses the semester system. For instance, DePaul University uses the quarter system, so check their website to verify library hours.</li>
             </ul>
             
             <!-- Sidebar for Important Note -->
-            <aside class="sidebar">
+            <div class="sidebar">
                 <h4>Being Realistic</h4>
                 <p>Don't waste your research time by traveling to a library only to find it closed or that browsing is restricted. When in doubt, call first.</p>
-            </aside>
+            </div>
             
             <!-- Public Libraries Subsection -->
             <h3>2. Public Libraries</h3>
@@ -291,9 +293,9 @@
             <p>If you can obtain the same resource online, why request it? Some resources available online include:</p>
             
             <ul class="content-list">
-                <li><strong>Public domain writings:</strong> Accessible without any cost or restriction.</li>
-                <li><strong>Resources licensed under Creative Commons:</strong> Often freely available for educational use.</li>
-                <li><strong>Media files:</strong> Such as video, audio, and images that may complement your research.</li>
+                <li><span class="emphasis">Public domain writings:</span> Accessible without any cost or restriction.</li>
+                <li><span class="emphasis">Resources licensed under Creative Commons:</span> Often freely available for educational use.</li>
+                <li><span class="emphasis">Media files:</span> Such as video, audio, and images that may complement your research.</li>
             </ul>
             
             <p>In general, if you can avoid making a trip to the library, you can save yourself time when researching.</p>
@@ -303,16 +305,16 @@
             <p>These web resources can help you find additional resources:</p>
             
             <ul class="content-list">
-                <li><strong>Google Scholar:</strong> Allows you to search for scholarly articles and view which articles are cited by other articles.</li>
-                <li><strong>Google Books:</strong> Allows you to preview a book, or in some cases, view the entire book, including the references section.</li>
-                <li><strong>Web of Science:</strong> Similar to Google Scholar, but focused on scientific papers.</li>
+                <li><span class="emphasis">Google Scholar:</span> Allows you to search for scholarly articles and view which articles are cited by other articles.</li>
+                <li><span class="emphasis">Google Books:</span> Allows you to preview a book, or in some cases, view the entire book, including the references section.</li>
+                <li><span class="emphasis">Web of Science:</span> Similar to Google Scholar, but focused on scientific papers.</li>
             </ul>
             
             <!-- Sidebar for Important Note -->
-            <aside class="sidebar">
+            <div class="sidebar">
                 <h4>Being Realistic</h4>
                 <p>If you're stuck when researching a topic in Technical Communication, try searching for a special issue, yearbook, or edited volume on your topic. These collections provide a snapshot of collective scholarship on a topic, helping you see how your topic relates to other research.</p>
-            </aside>
+            </div>
             
             <!-- Case Study Section -->
             <h3>Case Study: Using Web Resources</h3>
@@ -322,5 +324,10 @@
             <h3>Conclusion</h3>
             <p>That's it! Hopefully, you've learned a bit about conducting research and obtaining resources. Remember, starting early expands your research options beyond online-only resources. Now, take a short quiz to help retain some key points from this lesson.</p>
         </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Research Paper Toolbox. All rights reserved.</p>
+    </footer>
 </body>
 </html>

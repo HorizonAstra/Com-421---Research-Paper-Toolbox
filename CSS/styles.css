@@ -380,3 +380,9 @@ html {
 .objective-list li {
     margin-bottom: 10px;
 }
+
+.emphasis {
+    font-weight: bold;
+    color: #FFD700; /* Gold color */
+    font-size: 1.1em; /* Slightly larger than the surrounding text */
+}
