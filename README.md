@@ -23,7 +23,11 @@ The project follows a clear and consistent file and directory structure to allow
 
 ## Self-Critique
 
+For this project, my primary goal was to create a consistent, intuitive information structure to support self-directed learning. I focused on unifying the layout and navigation, ensuring that users could easily access resources and navigate through the modules. The top-level and internal navigation were designed for simplicity and clarity, with each module following a standardized structure to facilitate future expansion.
 
+Given more time, I would enhance accessibility by conducting more comprehensive testing to optimize the site for screen readers and keyboard navigation. Adding interactivity, such as quizzes or multimedia elements, would also benefit users by catering to diverse learning styles and making the experience more engaging. Another improvement would be incorporating a dark mode or adjustable font sizes, allowing users to customize their viewing experience.
+
+Overall, this project was about balancing functionality with ease of use, adhering closely to HTML and CSS standards, and avoiding aesthetic distractions. However, with additional resources, I’d prioritize deeper customization and accessibility to ensure the Research Paper Toolbox is inclusive and adaptable to all users.
 
 ### Directory Structure
 ```plaintext
