@@ -23,12 +23,13 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="placeholder.html">Topic</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li><a href="data.html">Data</a></li>
+                <li><a href="data.html" class="active">Data</a></li>
                 <li><a href="placeholder.html">References</a></li>
                 <li><a href="placeholder.html">Style</a></li>
                 <li><a href="placeholder.html">Layout</a></li>
                 <li><a href="placeholder.html">Modality</a></li>
                 <li><a href="placeholder.html">Professionalization</a></li>
+                <li><a href="template.html">Template</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +48,7 @@
     
     <main>
         <!-- Content Areas Section -->
-        <section class="content-section">
+        <section id="contents" class="content-section">
             <h3>Content Areas</h3>
             <p>This lesson will help you organize and analyze research data effectively through a review of the following areas:</p>
             
@@ -55,7 +56,7 @@
             <ul class="content-list">
                 <li>
                     <div class="content-item">
-                        <span class="emphasis">Formatting Data for Analysis</span>
+                        <span class="emphasis"><a href="#format-data-for-analysis">Format Data for Analysis</a></span>
                         <ul class="sub-list">
                             <li><a href="#open-dataset">Opening the Dataset in Excel</a></li>
                             <li><a href="#rename-columns">Renaming Variables for Clarity</a></li>
@@ -77,7 +78,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <span class="emphasis">Running Descriptive Statistics</span>
+                        <span class="emphasis"><a href="#run-descriptive-statistics">Run Descriptive Statistics</a></span>
                         <ul class="sub-list">
                             <li><a href="#prepare-summary">Preparing Data for Summary Statistics</a></li>
                             <li><a href="#run-toolpak">Using Analysis ToolPak for Descriptive Statistics</a></li>
@@ -88,7 +89,7 @@
                 
                 <li>
                     <div class="content-item">
-                        <span class="emphasis">Running Inferential Statistics</span>
+                        <span class="emphasis"><a href="#run-inferential-statistics">Run Inferential Statistics</a></span>
                         <ul class="sub-list">
                             <li><a href="#open-pasw">Opening and Uploading Data in PASW</a></li>
                             <li><a href="#choose-statistic">Choosing the Correct Statistic</a></li>
@@ -121,7 +122,7 @@
     
     
         <!-- Formatting Data for Analysis Section -->
-        <section class="content-section">
+        <section id="format-data-for-analysis" class="content-section">
             <h3 id="open-dataset">Format Data for Analysis</h3>
             <p>Make sure the computer you are working on has Microsoft Excel installed. Open the document <a href="../Files/tutorial_spreadsheet.xlsx" download><span class="emphasis">tutorial_spreadsheet.xlsx</span></a> in Excel and follow along with the lesson, taking action as instructed.</p>
             
@@ -182,7 +183,7 @@
         </section>
 
         <!-- Run Descriptive Statistics Section -->
-        <section class="content-section">
+        <section id="run-descriptive-statistics" class="content-section">
             <h3>Run Descriptive Statistics</h3>
 
             <!-- Sidebar for Additional Insight -->
@@ -215,7 +216,7 @@
 
 
         <!-- Run Inferential Statistics Section -->
-        <section class="content-section">
+        <section id="run-inferential-statistics" class="content-section">
             <h3 id="open-pasw">Run Inferential Statistics</h3>
             <p>Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download a 30-day free trial.)</p>
             
@@ -277,6 +278,9 @@
             <p>Now that you've finished the lesson, please complete a <span class="emphasis">short quiz</span> to test your understanding of formatting research datasets for comprehensive statistical analysis.</p>
         </section>
     </main>
+
+    <!-- Scroll to Contents Button -->
+    <a href="#contents" class="scroll-to-top" aria-label="Scroll to Contents">▲</a>
 
     <footer>
         <p>&copy; 2024 Research Paper Toolbox. All rights reserved.</p>
