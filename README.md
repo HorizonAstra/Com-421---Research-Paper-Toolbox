@@ -1,5 +1,3 @@
-# Com-421---Research-Paper-Toolbox
-
 # Research Paper Toolbox
 
 ## Overview
